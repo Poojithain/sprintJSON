@@ -9,17 +9,15 @@ sap.ui.define([
 
     return Controller.extend("app.miningjsonproject.controller.CompanyView", {
         onInit() {
-           
-            // var oModel = this.getOwnerComponent().getModel("MiningModel");
-            // oModel.loadData("/model/mockData/miningData.json");
-            
           
         },
         
         currencyFormatter(value) {
+            
             var oCurrencyFormat = NumberFormat.getCurrencyInstance({
              currencyCode: false
             });
+
              return "₹" + oCurrencyFormat.format(value);
          },
             
