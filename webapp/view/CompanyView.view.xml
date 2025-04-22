@@ -1,0 +1,67 @@
+<mvc:View controllerName="app.miningjsonproject.controller.CompanyView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:comp="sap.ui.comp.filterbar"
+    xmlns:core="sap.ui.core"
+    >
+    
+    <Page title="Mining Locations">
+        <headerContent>
+            <Button icon="sap-icon://sort" tooltip="Sort" press="onSort"/>
+            <Button icon="sap-icon://action" tooltip="Share" press="onDetailView"/>
+        </headerContent>
+
+        <comp:FilterBar>
+         
+            <comp:filterItems>
+           
+                <comp:FilterItem name="name" label="Location Name">
+                    <comp:control>
+                        <Input id="Filloca" liveChange="onSearch"></Input>
+                    </comp:control>
+                </comp:FilterItem>
+            </comp:filterItems>
+        </comp:FilterBar>
+
+        <content>
+            <FlexBox direction="Row" wrap="Wrap" justifyContent="Center">
+                <items>
+                
+                    <HBox items="{MiningModel>/locations}" id="idTab">
+                        <items>
+                            
+                            <VBox class="sapUiSmallMargin" width="25%">
+                             
+                                <GenericTile  header="{MiningModel>name}" subheader="{MiningModel>details/resources}" class="sapUiSmallMargin hoverTile"  press="onTilePress">
+                               
+                                    <TileContent>
+                                       <VBox>
+                                          <HBox>
+                        
+                                                <core:Icon src="sap-icon://accessibility" tooltip="Accessibility"/>
+                                                <Text text="{MiningModel>details/accessibility}" />
+
+                                            </HBox>
+
+                                            <HBox>
+                                                <Text text="{path: 'MiningModel>details/cost', formatter: '.currencyFormatter'}" class="boldText" />
+                                            </HBox>
+
+                                        </VBox>
+
+                                    </TileContent>
+                                </GenericTile>
+                            </VBox>
+                        </items>
+                    </HBox>
+                </items>
+            </FlexBox>
+        </content>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer/>
+                <Button text="Create" press="onCreatePress"/>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

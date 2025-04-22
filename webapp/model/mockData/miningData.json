@@ -1,0 +1,85 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Golden Valley",
+      "details": {
+        "resources": ["Gold", "Silver"],
+        "cost": 5000000,
+        "man_days": 120,
+        "probability_of_positive_outcome": 0.75,
+        "image1": "https://images.squarespace-cdn.com/content/v1/6278138e6055e5734ae318ed/8ef306e4-a859-422c-b287-234de904ffbd/Jan+2024+GV+mine+exploration-7.JPG",
+        "image2": "https://www.jwspeaker.com/wp-content/uploads/mining-video-hero-fallback.jpg",
+        "resource_icons": ["sap-icon://gold", "sap-icon://silver"],
+        "environmental_impact": "Moderate",
+        "accessibility": "High",
+        "historical_success_rate": 0.70
+      }
+    },
+    {
+      "id": 2,
+      "name": "Copper Ridge",
+      "details": {
+        "resources": ["Copper", "Iron"],
+        "cost": 300000,
+        "man_days": 90,
+        "probability_of_positive_outcome": 0.60,
+        "image1": "https://www.theassay.com/wp-content/uploads/2023/05/TOBY-40-Eagle-Mountain.jpg",
+        "image2": "https://www.theassay.com/wp-content/uploads/2023/05/TOBY-40-Eagle-Mountain.jpg",
+        "resource_icons": ["sap-icon://copper", "sap-icon://iron"],
+        "environmental_impact": "Low",
+        "accessibility": "Medium",
+        "historical_success_rate": 0.65
+      }
+    },
+    {
+      "id": 3,
+      "name": "Uranium Hills",
+      "details": {
+        "resources": ["Coal", "Uranium"],
+        "cost": 700000,
+        "man_days": 150,
+        "probability_of_positive_outcome": 0.80,
+        "image1": "https://bloximages.chicago2.vip.townnews.com/rapidcityjournal.com/content/tncms/assets/v3/editorial/6/2d/62d1d18c-09e6-5491-b466-8e9bf570a721/57e2f8d4b4747.image.jpg?resize=1200%2C784",
+        "image2":"https://bloximages.chicago2.vip.townnews.com/rapidcityjournal.com/content/tncms/assets/v3/editorial/6/2d/62d1d18c-09e6-5491-b466-8e9bf570a721/57e2f8d4b4747.image.jpg?resize=1200%2C784",
+        "link": "https://example.com/locationC",
+        "resource_icons": ["sap-icon://coal", "sap-icon://uranium"],
+        "environmental_impact": "High",
+        "accessibility": "Low",
+        "historical_success_rate": 0.75
+      }
+    },
+    {
+      "id": 4,
+      "name": "Platinum Peak",
+      "details": {
+        "resources": ["Platinum", "Nickel"],
+        "cost": 600000,
+        "man_days": 110,
+        "probability_of_positive_outcome": 0.70,
+        "image1": "https://www.greatmining.com/images/about-menu-mining-3.jpg",
+        "image2": "https://tse1.mm.bing.net/th/id/OIP.HnF6AYbzjhdJu2CLCejzJQAAAA?pid=ImgDet&w=399&h=266&rs=1",
+        "resource_icons": ["sap-icon://platinum", "sap-icon://nickel"],
+        "environmental_impact": "Moderate",
+        "accessibility": "High",
+        "historical_success_rate": 0.68
+      }
+    },
+    {
+      "id": 5,
+      "name": "Location E",
+      "details": {
+        "resources": ["Tin", "Lead"],
+        "cost": 250000,
+        "man_days": 80,
+        "probability_of_positive_outcome": 0.55,
+        "image": "path/to/imageE.jpg",
+        "link": "https://example.com/locationE",
+        "resource_icons": ["sap-icon://tin", "sap-icon://lead"],
+        "environmental_impact": "Low",
+        "accessibility": "Medium",
+        "historical_success_rate": 0.60
+      }
+    }
+  ]
+}
