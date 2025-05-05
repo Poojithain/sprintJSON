@@ -6,10 +6,6 @@
     >
     
     <Page title="Mining Locations">
-        <headerContent>
-            <Button icon="sap-icon://sort" tooltip="Sort" press="onSort"/>
-            <Button icon="sap-icon://action" tooltip="Share" press="onDetailView"/>
-        </headerContent>
 
         <comp:FilterBar>
          
@@ -17,38 +13,29 @@
            
                 <comp:FilterItem name="name" label="Location Name">
                     <comp:control>
-                        <Input id="Filloca" liveChange="onSearch"></Input>
+                        <Input id="Filloca" liveChange="onSearch" width="80%"></Input>
                     </comp:control>
                 </comp:FilterItem>
             </comp:filterItems>
         </comp:FilterBar>
 
         <content>
-            <FlexBox direction="Row" wrap="Wrap" justifyContent="Center">
+            <FlexBox direction="Row" wrap="Wrap" justifyContent="SpaceBetween">
                 <items>
-                
-                    <HBox items="{MiningModel>/locations}" id="idTab">
+                    <HBox items="{MiningModel>/locations}" id="idTab" wrap="Wrap" justifyContent="Start">
                         <items>
-                            
-                            <VBox class="sapUiSmallMargin" width="25%">
-                             
-                                <GenericTile  header="{MiningModel>name}" subheader="{MiningModel>details/resources}" class="sapUiSmallMargin hoverTile"  press="onTilePress">
-                               
+                            <VBox class="sapUiSmallMargin" width="21%">
+                                <GenericTile header="{MiningModel>name}" subheader="{MiningModel>details/resources}" class="sapUiSmallMargin hoverTile" press="onTilePress">
                                     <TileContent>
-                                       <VBox>
-                                          <HBox>
-                        
-                                                <core:Icon src="sap-icon://accessibility" tooltip="Accessibility"/>
-                                                <Text text="{MiningModel>details/accessibility}" />
-
+                                        <VBox>
+                                            <HBox>
+                                                <core:Icon src="sap-icon://accessibility" tooltip="Accessibility" class="sapUiTinyMarginEnd"/>
+                                                <Text text="{MiningModel>details/accessibility}" class="sapUiSmallMarginBottom"/>
                                             </HBox>
-
                                             <HBox>
                                                 <Text text="{path: 'MiningModel>details/cost', formatter: '.currencyFormatter'}" class="boldText" />
                                             </HBox>
-
                                         </VBox>
-
                                     </TileContent>
                                 </GenericTile>
                             </VBox>
@@ -57,11 +44,5 @@
                 </items>
             </FlexBox>
         </content>
-        <footer>
-            <OverflowToolbar>
-                <ToolbarSpacer/>
-                <Button text="Create" press="onCreatePress"/>
-            </OverflowToolbar>
-        </footer>
     </Page>
 </mvc:View>

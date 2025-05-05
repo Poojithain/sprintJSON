@@ -1,32 +1,12 @@
-/* Enter your custom styles here */
-
-    
-.hoverTile {
-    transition: transform 0.3s ease-in-out;
-}
-
 .hoverTile:hover {
+    transition: transform 0.3s ease-in-out;
     transform: scale(1.1);
     border:1px solid rgba(235, 147, 222, 0.678)
 }
 
-
-
-.locationImage {
-    width: 45%;
-    height: auto;
-     border-radius: 8px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     margin: 0 10px;
-    }
-
-    .boldText {
+ .boldText {
         font-size: 1.2rem;
         font-weight: bold;
-        /* margin: 0.5rem; */
     }
-    
-    
-    
 
     

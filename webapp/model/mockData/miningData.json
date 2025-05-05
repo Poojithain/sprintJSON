@@ -8,9 +8,7 @@
         "cost": 5000000,
         "man_days": 120,
         "probability_of_positive_outcome": 0.75,
-        "image1": "https://images.squarespace-cdn.com/content/v1/6278138e6055e5734ae318ed/8ef306e4-a859-422c-b287-234de904ffbd/Jan+2024+GV+mine+exploration-7.JPG",
-        "image2": "https://www.jwspeaker.com/wp-content/uploads/mining-video-hero-fallback.jpg",
-        "resource_icons": ["sap-icon://gold", "sap-icon://silver"],
+        "image": "https://images.squarespace-cdn.com/content/v1/6278138e6055e5734ae318ed/8ef306e4-a859-422c-b287-234de904ffbd/Jan+2024+GV+mine+exploration-7.JPG",
         "environmental_impact": "Moderate",
         "accessibility": "High",
         "historical_success_rate": 0.70
@@ -24,9 +22,7 @@
         "cost": 300000,
         "man_days": 90,
         "probability_of_positive_outcome": 0.60,
-        "image1": "https://www.theassay.com/wp-content/uploads/2023/05/TOBY-40-Eagle-Mountain.jpg",
-        "image2": "https://www.theassay.com/wp-content/uploads/2023/05/TOBY-40-Eagle-Mountain.jpg",
-        "resource_icons": ["sap-icon://copper", "sap-icon://iron"],
+        "image": "https://www.theassay.com/wp-content/uploads/2023/05/TOBY-40-Eagle-Mountain.jpg",
         "environmental_impact": "Low",
         "accessibility": "Medium",
         "historical_success_rate": 0.65
@@ -40,10 +36,8 @@
         "cost": 700000,
         "man_days": 150,
         "probability_of_positive_outcome": 0.80,
-        "image1": "https://bloximages.chicago2.vip.townnews.com/rapidcityjournal.com/content/tncms/assets/v3/editorial/6/2d/62d1d18c-09e6-5491-b466-8e9bf570a721/57e2f8d4b4747.image.jpg?resize=1200%2C784",
-        "image2":"https://bloximages.chicago2.vip.townnews.com/rapidcityjournal.com/content/tncms/assets/v3/editorial/6/2d/62d1d18c-09e6-5491-b466-8e9bf570a721/57e2f8d4b4747.image.jpg?resize=1200%2C784",
+        "image": "https://bloximages.chicago2.vip.townnews.com/rapidcityjournal.com/content/tncms/assets/v3/editorial/6/2d/62d1d18c-09e6-5491-b466-8e9bf570a721/57e2f8d4b4747.image.jpg?resize=1200%2C784",
         "link": "https://example.com/locationC",
-        "resource_icons": ["sap-icon://coal", "sap-icon://uranium"],
         "environmental_impact": "High",
         "accessibility": "Low",
         "historical_success_rate": 0.75
@@ -57,9 +51,7 @@
         "cost": 600000,
         "man_days": 110,
         "probability_of_positive_outcome": 0.70,
-        "image1": "https://www.greatmining.com/images/about-menu-mining-3.jpg",
-        "image2": "https://tse1.mm.bing.net/th/id/OIP.HnF6AYbzjhdJu2CLCejzJQAAAA?pid=ImgDet&w=399&h=266&rs=1",
-        "resource_icons": ["sap-icon://platinum", "sap-icon://nickel"],
+        "image": "https://www.greatmining.com/images/about-menu-mining-3.jpg",
         "environmental_impact": "Moderate",
         "accessibility": "High",
         "historical_success_rate": 0.68
@@ -67,19 +59,88 @@
     },
     {
       "id": 5,
-      "name": "Location E",
+      "name": "Tin Valley",
       "details": {
         "resources": ["Tin", "Lead"],
         "cost": 250000,
         "man_days": 80,
         "probability_of_positive_outcome": 0.55,
-        "image": "path/to/imageE.jpg",
-        "link": "https://example.com/locationE",
-        "resource_icons": ["sap-icon://tin", "sap-icon://lead"],
+        "image": "https://tse4.mm.bing.net/th/id/OIP.AiazAXOAA5rAvZzeYP2HowHaE6?w=261&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
         "environmental_impact": "Low",
         "accessibility": "Medium",
         "historical_success_rate": 0.60
       }
+    },
+    {
+      "id": 6,
+      "name": "Silver Mountain",
+      "details": {
+        "resources": ["Silver", "Zinc"],
+        "cost": 450000,
+        "man_days": 100,
+        "probability_of_positive_outcome": 0.65,
+        "image": "https://c8.alamy.com/comp/R0Y08C/silver-mountain-mines-potosi-bolivia-R0Y08C.jpg",
+        "environmental_impact": "Medium",
+        "accessibility": "High",
+        "historical_success_rate": 0.70
+      }
+    },
+    {
+      "id": 7,
+      "name": "Iron Hills",
+      "details": {
+        "resources": ["Iron", "Nickel"],
+        "cost": 350000,
+        "man_days": 90,
+        "probability_of_positive_outcome": 0.60,
+        "image": "https://images.thewest.com.au/publication/B88381449Z/GQSSTU5U.1-1.jpg?imwidth=810&impolicy=wan_v3",
+        "environmental_impact": "High",
+        "accessibility": "Low",
+        "historical_success_rate": 0.55
+      }
+    },
+    {
+      "id": 8,
+      "name": "Gold Coast",
+      "details": {
+        "resources": ["Gold", "Copper"],
+        "cost": 600000,
+        "man_days": 120,
+        "probability_of_positive_outcome": 0.75,
+        "image": "https://tse2.mm.bing.net/th/id/OIP.XqbP8G3Y5ppLJI4Tdg_jvgHaFj?w=620&h=465&rs=1&pid=ImgDetMain",
+        "environmental_impact": "Low",
+        "accessibility": "Medium",
+        "historical_success_rate": 0.80
+      }
+    },
+    {
+      "id": 9,
+      "name": "Diamond Valley",
+      "details": {
+        "resources": ["Diamond", "Graphite"],
+        "cost": 800000,
+        "man_days": 150,
+        "probability_of_positive_outcome": 0.85,
+        "image": "https://tse4.mm.bing.net/th/id/OIP.asIjdrULbtR1bVbwycfgqwHaE8?rs=1&pid=ImgDetMain",
+        "environmental_impact": "High",
+        "accessibility": "High",
+        "historical_success_rate": 0.90
+      }
+    },
+    {
+      "id": 10,
+      "name": "Emerald Forest",
+      "details": {
+        "resources": ["Emerald", "Bauxite"],
+        "cost": 500000,
+        "man_days": 110,
+        "probability_of_positive_outcome": 0.70,
+        "image": "https://tse2.mm.bing.net/th/id/OIP.6sF0-xjmMNZ9X-FPg_x-CAHaE7?rs=1&pid=ImgDetMain",
+        "environmental_impact": "Medium",
+        "accessibility": "Medium",
+        "historical_success_rate": 0.75
+      }
     }
+    
   ]
 }

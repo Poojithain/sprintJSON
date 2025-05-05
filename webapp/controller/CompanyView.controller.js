@@ -22,9 +22,6 @@ sap.ui.define([
          },
             
 
-       
-
-       
           onTilePress: function (oEvent) {
                 var oTile = oEvent.getSource();
                 var oBindingContext = oTile.getBindingContext("MiningModel");
